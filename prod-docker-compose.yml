@@ -1,0 +1,10 @@
+version: '3'
+services: 
+    web:
+        build: 
+            context: .
+            dockerfile: Dockerfile
+        ports:
+            - "4949:4949"
+        restart: always
+        stdin_open: true

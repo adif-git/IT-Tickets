@@ -1,0 +1,42 @@
+.tickets-page{
+    margin-top: 100px;
+    padding: 0 40px;
+    text-align: center;
+}
+
+.tickets h1{
+    font-size: 30px;
+    line-height: 70px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.tickets-page .nav-pills{
+    justify-content: center;
+    flex-direction: row;
+
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(166, 166, 166, 0.671);
+}
+
+.tickets-page a{
+    margin: 0 5px;
+}
+
+.ticket-form label{
+    font-weight: 700;
+}
+
+.ticket-form button, .tickets-page a, .tickets-page button{
+    opacity: 0.4;
+    background-color: #A6A6A6;
+    color: #0D0D0D;
+    font-weight: bold;
+    border: 0px;
+}
+
+.ticket-form button:hover, .tickets-page a:hover, .tickets-page .nav-pills .active, .tickets-page button:hover{
+    opacity: 1;
+    background-color: #262626;
+    color: #F2F2F2;
+}

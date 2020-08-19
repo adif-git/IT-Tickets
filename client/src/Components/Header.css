@@ -1,0 +1,24 @@
+.header nav{
+    background-color: #0D0D0D;
+    opacity: 0.92;
+    color: #F2F2F2 !important;
+}
+
+.header .navbar-brand{
+    font-weight: 900;
+    color: #F2F2F2 !important;
+    margin-right: 30px;
+}
+
+.header .nav-link{
+    color: #595959 !important;
+    font-weight: 700;
+}
+
+.header .nav-link:hover{
+    color: #F2F2F2 !important;
+}
+
+.header .nav-item{
+    margin: 0 3px;
+}

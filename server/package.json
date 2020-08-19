@@ -1,0 +1,43 @@
+{
+  "name": "it-ticket-system",
+  "version": "1.0.0",
+  "description": "IT ticketing system build using MongoDB Atlas, Node.js, and React.js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env NODE_ENV=production node server.js",
+    "server": "cross-env NODE_ENV=development nodemon server.js",
+    "client": "npm start --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adif-git/IT-ticket-system.git"
+  },
+  "engines": {
+    "node": "12.18.2"
+  },
+  "author": "adif-git",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adif-git/IT-ticket-system/issues"
+  },
+  "homepage": "https://github.com/adif-git/IT-ticket-system#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.27",
+    "morgan": "^1.10.0",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "nodemon": "^2.0.4"
+  }
+}

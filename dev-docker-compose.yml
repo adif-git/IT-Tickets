@@ -1,0 +1,23 @@
+version: '3'
+services: 
+    node-backend:
+        build: 
+            context: ./server/
+            dockerfile: Dockerfile.dev
+        ports:
+            - "4949:4949"
+        volumes: 
+            - ./server:/app/server
+        restart: always
+    react-frontend:
+        build:
+            context: ./client/
+            dockerfile: Dockerfile.dev
+        ports:
+            - "3000:3000"
+        volumes: 
+            - ./client:/app/client
+        restart: always
+        depends_on: 
+            - node-backend
+        stdin_open: true
